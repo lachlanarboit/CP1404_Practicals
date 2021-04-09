@@ -1,5 +1,6 @@
 """
-CP1404 Practical - Emails
+CP1404 Practical
+Emails
 """
 
 def main():

@@ -1,5 +1,6 @@
 """
-CP1404 Practical - Hex Colours
+CP1404 Practical
+Hex Colours
 """
 
 COLOUR_CODES = {"AliceBlue": "#f0f8ff", "AntiqueWhite": "#faebd7",
