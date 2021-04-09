@@ -1,5 +1,6 @@
 """
-CP1404 Practical - Word Occurrences
+CP1404 Practical
+Word Occurrences
 """
 
 word_to_count = {}
