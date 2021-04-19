@@ -21,7 +21,6 @@ class Car:
         """"Return string representation of car object"""
         return "{}, fuel={}, odometer={}".format(self.name, self.fuel, self.odometer)
 
-
     def add_fuel(self, amount):
         """Add amount to the car's fuel."""
         self.fuel += amount
