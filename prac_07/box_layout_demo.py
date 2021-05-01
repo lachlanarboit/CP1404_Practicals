@@ -13,4 +13,5 @@ class BoxLayoutDemo(App):
         self.root.ids.output_label.text = "Hello "
         id: output_label
 
+
 BoxLayoutDemo().run()
