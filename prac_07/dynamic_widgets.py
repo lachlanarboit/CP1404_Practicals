@@ -10,7 +10,6 @@ from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.properties import StringProperty
 
-
 class DynamicWidgetsApp(App):
     """Main program - Kivy app to demo dynamic widget creation."""
     status_text = StringProperty()
