@@ -7,15 +7,13 @@ import os
 
 def main():
     """Move files into where user wants to share them based on extension"""
-    # This directory will allow us to map extensions to the destination folder names
     extension_to_category = {}
     os.chdir("FilesToSort")
-    for filename in os.chdir('.'):
-        # Ignore directories, just process files
+    for filename in os.listdir('.'):
         if os.path.isdir(filename):
             continue
 
-        extension = filename('.')[-1]
+        extension = filename.split('.')[-1]
         if extension not in extension_to_category:
             category = input("What category would you like to sort {} files into? ",format(extension))
             # Now map new extension to folder name
@@ -25,6 +23,7 @@ def main():
             except FileExistsError:
                 pass
 
+        print("{}/{}".format(extension_to_category[extension], filename))
         os.rename(filename, "{}/{}".format(extension_to_category[extension], filename))
 
 main()
