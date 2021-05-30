@@ -4,6 +4,7 @@ continues doing so until user enters blank input
 """
 import wikipedia
 
+
 def wiki_summary():
     """Print summary of the page chosen by user"""
     page_title = input("Enter a page title: ")
@@ -14,6 +15,7 @@ def wiki_summary():
             print(e.options)
         page_title = input("Enter a page title: ")
     print("Finish!")
+
 
 def wiki():
     """"Print the title, summary and URL of the page the user chooses"""

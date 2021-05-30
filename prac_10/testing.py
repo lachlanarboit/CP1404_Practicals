@@ -38,7 +38,7 @@ def run_tests():
     test_car = Car()
     assert test_car.odometer == 0, "Car does not set odometer correctly"
 
-    # TODO: 2. write assert statements to show if Car sets the fuel correctly
+    # 2. write assert statements to show if Car sets the fuel correctly
     # Note that Car's __init__ function sets the fuel in one of two ways:
     # using the value passed in or the default
     # You should test both of these
@@ -48,21 +48,20 @@ def run_tests():
     test_car = Car()
     assert test_car.fuel == 0
 
-# 5. Write and test a function to format a phrase as a sentence,
-# starting with a capital and ending with a single full stop.
-# Important: start with a function header and just use pass as the body
-# then add doctests for 3 tests:
-# 'hello' -> 'Hello.'
-# 'It is an ex parrot.' -> 'It is an ex parrot.'
-# and one more you decide (one that is valid!)
-# test this and watch the tests fail
-# then write the body of the function so that the tests pass
 
-
-def phrase_to_sentence(phrase):
+def format_phrase_to_sentence(phrase):
+    # 5. Write and test a function to format a phrase as a sentence,
+    # starting with a capital and ending with a single full stop.
+    # Important: start with a function header and just use pass as the body
+    # then add doctests for 3 tests:
+    # 'hello' -> 'Hello.'
+    # 'It is an ex parrot.' -> 'It is an ex parrot.'
+    # and one more you decide (one that is valid!)
+    # test this and watch the tests fail
+    # then write the body of the function so that the tests pass
     """
     Format phrase as sentence. Start with capital and end with .
-    >>> phrase_to_sentence('hello')
+    >>> format_phrase_to_sentence('hello')
     'Hello.'
     """
     # Capitalise  first letter
